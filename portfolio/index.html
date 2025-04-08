@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshmeet Singh - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <!-- Optional: Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm <span class="highlight">Harshmeet Singh</span></h1>
+            <h2>I'm a <span class="typing">Web Developer</span></h2>
+            <p>I'm a 3rd year Computer Science student in the Faculty of Engineering at McMaster University, Canada .</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/profile1.png" alt="Your Name">
+                </div>
+                <div class="about-text">
+                    <p>I'm a third-year Computer Science student at McMaster University with a strong academic record and a passion for building impactful software. I enjoy exploring both front-end and back-end development.</p>
+                    <p>Outside of academics, I love staying active, swimming is one of my favorite ways to unwind and reset. I'm currently looking for co-op opportunities for the summer of 2025, where I can apply my skills, continue learning, and collaborate on exciting tech projects. Feel free to reach out—I'm always open to connecting and growing in this ever-evolving field!</p>
+                    <a href="assets/resume/resume.pdf" class="btn primary-btn" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="assets/images/project11.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Developed a personal portfolio website using HTML, CSS, and JavaScript to showcase projects, skills, and experience with an interactive and user-friendly design.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn small-btn">View Live</a>
+                            <a href="#" target="_blank" class="btn small-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <img src="assets/images/project2.webp" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Due Date Tracker</h3>
+                        <p>Built a session-based deadline tracker using Next.js, TypeScript, and PostgreSQL—no login required. Designed a priority-based task system and implemented cross-platform calendar syncing via hosted ICS files.</p>
+                        <div class="project-links">
+                            <a href="#" target="https://mcwta.vercel.app/" class="btn small-btn">View Live</a>
+                            <a href="#" target="_blank" class="btn small-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-img">
+                        <img src="assets/images/project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>SmartCampus</h3>
+                        <p>Developed a full-stack web app to monitor campus occupancy and energy use via IoT sensors. Built RESTful APIs for real-time data and visualized trends with React and Chart.js dashboards.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn small-btn">View Live</a>
+                            <a href="#" target="_blank" class="btn small-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <img src="assets/images/project4.png" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Social media platform (ig clone)</h3>
+                        <p>Developed an Instagram-style social media clone using Django, JavaScript, and Bootstrap. Features include user authentication, post sharing, likes, and comments. Built REST APIs and ensured responsive design with basic data privacy measures.</p>
+                        <div class="project-links">
+                            <a href="#" target="https://mcwta.vercel.app/" class="btn small-btn">View Live</a>
+                            <a href="#" target="_blank" class="btn small-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-item">
+                        <span>HTML</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-item">
+                        <span>Git</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Haskell</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                
+                    <div class="skill-item">
+                        <span>C</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    <div class="skill-item">
+                            <span>Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                    <div class="skill-item">
+                        <span>Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>singh27@mcmaster.ca</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>giansinghsohi123@gmail.com</p>
+                    </div>
+                    
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Harshmeet Singh. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+<!-- Terminal effects -->
+<div class="scanline"></div>
+<div class="crt-effect"></div>
+</body>
+</html>
